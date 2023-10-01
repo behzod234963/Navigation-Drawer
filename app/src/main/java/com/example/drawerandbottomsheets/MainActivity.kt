@@ -14,11 +14,11 @@ import java.security.AccessController
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var binding:ActivityMainBinding
+    lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setNavigation()
@@ -35,11 +35,11 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-            NavigationView.itemIconTintList=null
+            NavigationView.itemIconTintList = null
 
-            val navController=
-                (supportFragmentManager.findFragmentById(R.id.nvNavHostFragment) as NavHostFragment ).navController
-            NavigationUI.setupWithNavController(NavigationView,navController)
+            val navController =
+                (supportFragmentManager.findFragmentById(R.id.nvNavHostFragment) as NavHostFragment).navController
+            NavigationUI.setupWithNavController(NavigationView, navController)
 
         }
 
