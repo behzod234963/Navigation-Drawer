@@ -9,4 +9,9 @@
         android:icon="@drawable/ic_launcher_background"
         android:title="Office"/>
 
+    <item android:id="@+id/bottomSheetFragment"
+        android:title="bgrfb"
+        android:icon="@color/black"/>
+
+
 </menu>
